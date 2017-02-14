@@ -2,6 +2,8 @@ package proyectoweb;
 
 import java.util.List;
 
+import DTO.PatologiaDTO;
+
 public class PatologiaService {
 
 	public static PatologiaDTO buscarPatologiasPorID(int id) {

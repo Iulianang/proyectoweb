@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jcraft.jsch.Session;
+
+import DTO.PatologiaDTO;
+
 import com.jcraft.jsch.JSch;
 
 public class PatologiaDAO {
