@@ -108,33 +108,6 @@ public class PatologiaDAO {
 				}
 			}
 			
-				
-		
+	}
 	}
 	
-	
-	
-	public PatologiaDAO buscarPatologiaPorID(int id){
-		PatologiaDTO patologia = new PatologiaDTO();
-		List<PatologiaDTO> lista_sintomas = null;
-		
-		String id_St = String.valueOf(id);
-		String nombre_patologia = null;
-			try {
-				patologia = (PatologiaDTO) ejecutarConsultaSimple(BUSCAR_PATOLOGIAS_POR_ID);
-				
-				nombre_patologia = patologia.getNombre_patologia();
-				
-				lista_sintomas = ejecutarConsultaMultiple(Consultas.CONSULTA_SINTOMAS_POR_PATOLOGIA, nombre_patologia);
-				
-				patologia.setLista_sintomas(lista_sintomas);
-				
-			} catch (Throwable e) 
-			{
-				e.printStackTrace();
-			}
-		
-		return patologia;
-	}
-	
-}

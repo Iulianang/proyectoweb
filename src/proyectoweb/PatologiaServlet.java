@@ -37,11 +37,11 @@ public class PatologiaServlet extends HttpServlet {
 		String valorid = request.getParameter("id");
 		int id = Integer.valueOf(valorid);
 
-		patologia = service_patologia.obtenerPatologiaPorID(id);
-
-		pw.write("Nombre: " + patologia.getNombre_patologia() + "<br><br>Causa: " + patologia.getCausa_patologia()
-				+ "<br><br>Descripcion " + patologia.getDescripcion_patologia() + "<br><br>Tratamiento: "
-				+ patologia.getTratamiento_patologia());
+//		patologia = service_patologia.obtenerPatologiaPorID(id);
+//
+//		pw.write("Nombre: " + patologia.getNombre_patologia() + "<br><br>Causa: " + patologia.getCausa_patologia()
+//				+ "<br><br>Descripcion " + patologia.getDescripcion_patologia() + "<br><br>Tratamiento: "
+//				+ patologia.getTratamiento_patologia());
 
 	}
 
