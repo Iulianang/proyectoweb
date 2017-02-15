@@ -1,6 +1,7 @@
 package controlador;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -8,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import DTO.PatologiaDTO;
-import proyectoweb.PatologiaService;
+import servicios.PatologiaService;
 
 /**
  * Servlet implementation class BuscarPatologia
@@ -30,8 +31,9 @@ public class BuscarPatologia extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-	PatologiaService ps = new PatologiaService();
-	PatologiaDTO patoDTO = ps.buscarPatologiasPorID(1);
+		PatologiaService ps = new PatologiaService();
+		PatologiaDTO patoDto = ps.buscarPatologiaPorId(1);
+		PrintWriter pw = response.getWriter().append(patoDto.getDescripcion());
 	
 	}
 

@@ -8,9 +8,11 @@ public class PatologiaService {
 	
 	public PatologiaDTO buscarPatologiaPorId (int id)
 	{
+		PatologiaDTO pdto = null;
 		PatologiaDAO pdao = new PatologiaDAO();
-		pdao.buscarPorId(id);
-		return null; //patologia DTO
 		
+			pdto = pdao.buscarPorId(id);
+		
+		return pdto;
 	}
 }
