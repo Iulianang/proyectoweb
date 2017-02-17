@@ -23,7 +23,7 @@
       background-color: skyblue ;
       padding: 25px;
     }
-H1{size:6 color:pink}
+H1{size:4 color:pink}
 body{direction:rtl;
      background-image: url(img/fondo.jpg);
      background-color: rgb(255, 255, 255);
@@ -72,7 +72,7 @@ body{direction:rtl;
 
 
 <div class="container">
-  <h2 align="left">CATARATAS</h2>
+  <h1 align="left">CATARATAS</h1>
             
     <center><table style="backgroundcolor="white"; opacity: 0,5; filter:alpha(opacity=50)" class="table table-bordered">
     <tbody>
